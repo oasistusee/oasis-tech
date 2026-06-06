@@ -110,6 +110,10 @@ img {
     text-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
 }
 
+.logo-img {
+    filter: drop-shadow(0 0 8px rgba(0, 255, 136, 0.4));
+}
+
 .logo-text {
     font-size: 1.1rem;
     font-weight: 600;
@@ -1220,9 +1224,8 @@ a.contact-value:hover {
 }
 
 .loader-icon {
-    font-size: 3rem;
-    color: var(--green-400);
     animation: loader-pulse 1.5s ease-in-out infinite;
+    filter: drop-shadow(0 0 15px rgba(0, 255, 136, 0.6));
 }
 
 @keyframes loader-pulse {
