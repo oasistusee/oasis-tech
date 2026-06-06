@@ -5,11 +5,30 @@
 
 // ==================== 初始化 ====================
 document.addEventListener('DOMContentLoaded', () => {
+    initPageLoader();
     initParticles();
     initScrollAnimations();
     initNavbarScroll();
     initSmoothScroll();
+    initHamburgerMenu();
+    initBackToTop();
 });
+
+// ==================== 页面加载动画 ====================
+function initPageLoader() {
+    const loader = document.getElementById('pageLoader');
+    if (loader) {
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                loader.classList.add('hidden');
+            }, 500);
+        });
+        // 超时隐藏
+        setTimeout(() => {
+            loader.classList.add('hidden');
+        }, 3000);
+    }
+}
 
 // ==================== 粒子动画 ====================
 function initParticles() {
@@ -238,3 +257,65 @@ document.querySelectorAll('.service-card').forEach(card => {
         card.style.setProperty('--mouse-y', `${y}px`);
     });
 });
+
+// ==================== 汉堡菜单 ====================
+function initHamburgerMenu() {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    const overlay = document.getElementById('mobileMenuOverlay');
+
+    if (!hamburger || !navLinks) return;
+
+    function toggleMenu() {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+        overlay.classList.toggle('active');
+        document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+
+        const isOpen = hamburger.classList.contains('active');
+        hamburger.setAttribute('aria-expanded', isOpen);
+        hamburger.setAttribute('aria-label', isOpen ? '关闭菜单' : '打开菜单');
+    }
+
+    hamburger.addEventListener('click', toggleMenu);
+
+    // 点击遮罩关闭
+    overlay.addEventListener('click', toggleMenu);
+
+    // 点击链接关闭菜单
+    navLinks.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            if (navLinks.classList.contains('active')) {
+                toggleMenu();
+            }
+        });
+    });
+
+    // ESC键关闭菜单
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+            toggleMenu();
+        }
+    });
+}
+
+// ==================== 返回顶部按钮 ====================
+function initBackToTop() {
+    const backToTop = document.getElementById('backToTop');
+    if (!backToTop) return;
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 500) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    });
+
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
