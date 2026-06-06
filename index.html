@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绿洲网络科技有限公司 - AI自动化工作流</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 粒子背景 -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- 导航栏 -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">◆</span>
+                <span class="logo-text">绿洲科技</span>
+            </div>
+            <div class="nav-links">
+                <a href="#services" class="nav-link">服务</a>
+                <a href="#evolution" class="nav-link">能力</a>
+                <a href="#custom" class="nav-link">定制</a>
+                <a href="#contact" class="nav-link">联系</a>
+            </div>
+            <a href="#contact" class="nav-cta">立即咨询</a>
+        </div>
+    </nav>
+
+    <!-- Hero 区域 -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">AI 驱动创新</div>
+            <h1 class="hero-title">
+                <span class="title-line">AI 自动化工作流</span>
+                <span class="title-line gradient-text">驱动未来创造力</span>
+            </h1>
+            <p class="hero-subtitle">
+                视频剪辑 · 平面设计 · 3D建模
+            </p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary">
+                    <span>了解更多</span>
+                    <span class="btn-glow"></span>
+                </a>
+                <a href="#contact" class="btn btn-secondary">免费试用</a>
+            </div>
+        </div>
+        <div class="hero-decoration">
+            <div class="decoration-line line-1"></div>
+            <div class="decoration-line line-2"></div>
+            <div class="decoration-line line-3"></div>
+        </div>
+    </section>
+
+    <!-- 核心服务 -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">核心服务</span>
+                <h2 class="section-title">AI 赋能创意工作流</h2>
+            </div>
+            <div class="services-grid">
+                <!-- AI视频剪辑 -->
+                <div class="service-card fade-in">
+                    <div class="card-glow"></div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">AI 视频剪辑</h3>
+                    <p class="card-desc">智能分析视频内容，自动完成剪辑、配乐、字幕生成，效率提升10倍</p>
+                    <ul class="card-features">
+                        <li>
+                            <span class="feature-dot"></span>
+                            自动场景识别与剪辑
+                        </li>
+                        <li>
+                            <span class="feature-dot"></span>
+                            智能配乐与音效匹配
+                        </li>
+                        <li>
+                            <span class="feature-dot"></span>
+                            多语言字幕自动生成
+                        </li>
+                        <li>
+                            <span class="feature-dot"></span>
+                            一键多平台适配输出
+                        </li>
+                    </ul>
+                    <a href="#video-detail" class="card-link">
+                        了解详情
+                        <svg viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- AI平面设计 -->
+                <div class="service-card fade-in">
+                    <div class="card-glow"></div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5A2.25 2.25 0 0022.5 18.75V5.25A2.25 2.25 0 0020.25 3H3.75A2.25 2.25 0 001.5 5.25v13.5A2.25 2.25 0 003.75 21z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">AI 平面设计</h3>
+                    <p class="card-desc">从创意到成品，AI辅助完成海报、UI、品牌视觉等全流程设计</p>
+                    <ul class="card-features">
+                        <li>
+                            <span class="feature-dot"></span>
+                            智能排版与配色方案
+                        </li>
+                        <li>
+                            <span class="feature-dot"></span>
+                            风格迁移与统一处理
+                        </li>
+                        <li>
+                            <span class="feature-dot"></span>
+                            批量素材快速生成
+                        </li>
+                        <li>
+                            <span class="feature-dot"></span>
+                            品牌视觉一致性保障
+                        </li>
+                    </ul>
+                    <a href="#design-detail" class="card-link">
+                        了解详情
+                        <svg viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- AI 3D建模 -->
+                <div class="service-card fade-in">
+                    <div class="card-glow"></div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">AI 3D建模</h3>
+                    <p class="card-desc">文本/图片驱动3D模型生成，大幅降低建模门槛与时间成本</p>
+                    <ul class="card-features">
+                        <li>
+                            <span class="feature-dot"></span>
+                            文本描述快速建模
+                        </li>
+                        <li>
+                            <span class="feature-dot"></span>
+                            图片转3D模型
+                        </li>
+                        <li>
+                            <span class="feature-dot"></span>
+                            智能材质与贴图生成
+                        </li>
+                        <li>
+                            <span class="feature-dot"></span>
+                            场景自动搭建
+                        </li>
+                    </ul>
+                    <a href="#modeling-detail" class="card-link">
+                        了解详情
+                        <svg viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI视频剪辑详情 -->
+    <section class="service-detail" id="video-detail">
+        <div class="container">
+            <div class="detail-wrapper">
+                <div class="detail-visual fade-in">
+                    <div class="detail-image">
+                        <div class="image-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                <path d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z"/>
+                            </svg>
+                            <span>AI视频剪辑工作流</span>
+                        </div>
+                        <div class="image-overlay">
+                            <div class="workflow-steps">
+                                <div class="step">素材导入</div>
+                                <div class="step-arrow">→</div>
+                                <div class="step">智能分析</div>
+                                <div class="step-arrow">→</div>
+                                <div class="step">自动剪辑</div>
+                                <div class="step-arrow">→</div>
+                                <div class="step">成片输出</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-content fade-in">
+                    <span class="section-tag">深度解析</span>
+                    <h2 class="detail-title">AI 视频剪辑</h2>
+                    <p class="detail-desc">
+                        基于深度学习的视频理解引擎，能够自动识别视频中的场景、人物、动作，
+                        智能完成剪辑、转场、配乐、字幕全流程，让专业级视频制作变得触手可及。
+                    </p>
+                    <div class="detail-capabilities">
+                        <h4 class="capabilities-title">核心能力</h4>
+                        <div class="capabilities-grid">
+                            <div class="capability-item">
+                                <div class="capability-icon">🎯</div>
+                                <div class="capability-info">
+                                    <h5>智能场景识别</h5>
+                                    <p>自动识别场景切换点，精准切割，准确率高达95%</p>
+                                </div>
+                            </div>
+                            <div class="capability-item">
+                                <div class="capability-icon">🎵</div>
+                                <div class="capability-info">
+                                    <h5>AI配乐匹配</h5>
+                                    <p>根据视频情绪自动匹配背景音乐，智能调整节奏</p>
+                                </div>
+                            </div>
+                            <div class="capability-item">
+                                <div class="capability-icon">📝</div>
+                                <div class="capability-info">
+                                    <h5>多语言字幕</h5>
+                                    <p>语音识别自动生成字幕，支持50+语言翻译</p>
+                                </div>
+                            </div>
+                            <div class="capability-item">
+                                <div class="capability-icon">📱</div>
+                                <div class="capability-info">
+                                    <h5>多平台适配</h5>
+                                    <p>一键生成横屏、竖屏、方形等多种尺寸</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">10x</div>
+                            <div class="stat-label">效率提升</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">识别准确率</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">支持格式</div>
+                        </div>
+                    </div>
+                    <div class="detail-scenarios">
+                        <h4 class="scenarios-title">应用场景</h4>
+                        <div class="scenarios-tags">
+                            <span class="scenario-tag">短视频制作</span>
+                            <span class="scenario-tag">企业宣传片</span>
+                            <span class="scenario-tag">在线课程</span>
+                            <span class="scenario-tag">产品展示</span>
+                            <span class="scenario-tag">活动记录</span>
+                        </div>
+                    </div>
+                    <div class="detail-testimonial">
+                        <div class="testimonial-content">
+                            <p>"AI视频剪辑让我们的制作周期从3天缩短到3小时，而且质量更加稳定。现在我们能同时处理10个项目，这在以前是不可想象的。"</p>
+                            <div class="testimonial-author">
+                                <span class="author-name">张明</span>
+                                <span class="author-role">某MCN机构内容总监</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI平面设计详情 -->
+    <section class="service-detail" id="design-detail">
+        <div class="container">
+            <div class="detail-wrapper reverse">
+                <div class="detail-visual fade-in">
+                    <div class="detail-image">
+                        <div class="image-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                <path d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5A2.25 2.25 0 0022.5 18.75V5.25A2.25 2.25 0 0020.25 3H3.75A2.25 2.25 0 001.5 5.25v13.5A2.25 2.25 0 003.75 21z"/>
+                            </svg>
+                            <span>AI平面设计工作流</span>
+                        </div>
+                        <div class="image-overlay">
+                            <div class="workflow-steps">
+                                <div class="step">需求输入</div>
+                                <div class="step-arrow">→</div>
+                                <div class="step">风格生成</div>
+                                <div class="step-arrow">→</div>
+                                <div class="step">智能排版</div>
+                                <div class="step-arrow">→</div>
+                                <div class="step">成品输出</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-content fade-in">
+                    <span class="section-tag">深度解析</span>
+                    <h2 class="detail-title">AI 平面设计</h2>
+                    <p class="detail-desc">
+                        融合生成式AI与设计原理，从创意构思到视觉呈现，AI辅助完成海报、UI界面、
+                        品牌视觉等全流程设计，让专业设计不再遥不可及。
+                    </p>
+                    <div class="detail-capabilities">
+                        <h4 class="capabilities-title">核心能力</h4>
+                        <div class="capabilities-grid">
+                            <div class="capability-item">
+                                <div class="capability-icon">🎨</div>
+                                <div class="capability-info">
+                                    <h5>智能排版引擎</h5>
+                                    <p>基于设计原理的自动排版，黄金比例、视觉层次一应俱全</p>
+                                </div>
+                            </div>
+                            <div class="capability-item">
+                                <div class="capability-icon">✨</div>
+                                <div class="capability-info">
+                                    <h5>风格迁移技术</h5>
+                                    <p>一键应用目标风格，保持品牌视觉一致性</p>
+                                </div>
+                            </div>
+                            <div class="capability-item">
+                                <div class="capability-icon">📦</div>
+                                <div class="capability-info">
+                                    <h5>批量素材生成</h5>
+                                    <p>一套设计自动生成多尺寸、多平台适配版本</p>
+                                </div>
+                            </div>
+                            <div class="capability-item">
+                                <div class="capability-icon">🎯</div>
+                                <div class="capability-info">
+                                    <h5>品牌一致性保障</h5>
+                                    <p>智能检测并修正品牌元素使用规范</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">8x</div>
+                            <div class="stat-label">效率提升</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">客户满意度</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">设计模板</div>
+                        </div>
+                    </div>
+                    <div class="detail-scenarios">
+                        <h4 class="scenarios-title">应用场景</h4>
+                        <div class="scenarios-tags">
+                            <span class="scenario-tag">海报设计</span>
+                            <span class="scenario-tag">UI界面</span>
+                            <span class="scenario-tag">品牌视觉</span>
+                            <span class="scenario-tag">社交媒体</span>
+                            <span class="scenario-tag">电商素材</span>
+                        </div>
+                    </div>
+                    <div class="detail-testimonial">
+                        <div class="testimonial-content">
+                            <p>"以前一个设计师一天只能出3套方案，现在AI能生成30套供我们选择。更重要的是，它真正理解了我们的品牌语言。"</p>
+                            <div class="testimonial-author">
+                                <span class="author-name">李婷</span>
+                                <span class="author-role">某品牌设计总监</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI 3D建模详情 -->
+    <section class="service-detail" id="modeling-detail">
+        <div class="container">
+            <div class="detail-wrapper">
+                <div class="detail-visual fade-in">
+                    <div class="detail-image">
+                        <div class="image-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                <path d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"/>
+                            </svg>
+                            <span>AI 3D建模工作流</span>
+                        </div>
+                        <div class="image-overlay">
+                            <div class="workflow-steps">
+                                <div class="step">文本/图片</div>
+                                <div class="step-arrow">→</div>
+                                <div class="step">模型生成</div>
+                                <div class="step-arrow">→</div>
+                                <div class="step">材质优化</div>
+                                <div class="step-arrow">→</div>
+                                <div class="step">3D输出</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-content fade-in">
+                    <span class="section-tag">深度解析</span>
+                    <h2 class="detail-title">AI 3D建模</h2>
+                    <p class="detail-desc">
+                        突破传统建模限制，通过文本描述或图片即可生成高质量3D模型。
+                        智能材质系统与场景搭建能力，让3D创作变得前所未有的简单。
+                    </p>
+                    <div class="detail-capabilities">
+                        <h4 class="capabilities-title">核心能力</h4>
+                        <div class="capabilities-grid">
+                            <div class="capability-item">
+                                <div class="capability-icon">💬</div>
+                                <div class="capability-info">
+                                    <h5>文本驱动建模</h5>
+                                    <p>用自然语言描述需求，AI自动生成对应3D模型</p>
+                                </div>
+                            </div>
+                            <div class="capability-item">
+                                <div class="capability-icon">🖼️</div>
+                                <div class="capability-info">
+                                    <h5>图片转3D</h5>
+                                    <p>单张或多张图片重建3D模型，支持360°视角</p>
+                                </div>
+                            </div>
+                            <div class="capability-item">
+                                <div class="capability-icon">🎭</div>
+                                <div class="capability-info">
+                                    <h5>智能材质生成</h5>
+                                    <p>自动匹配PBR材质，支持自定义调整</p>
+                                </div>
+                            </div>
+                            <div class="capability-item">
+                                <div class="capability-icon">🏗️</div>
+                                <div class="capability-info">
+                                    <h5>场景自动搭建</h5>
+                                    <p>智能布局与光照设置，一键生成完整场景</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">20x</div>
+                            <div class="stat-label">效率提升</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">90%</div>
+                            <div class="stat-label">模型还原度</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">30+</div>
+                            <div class="stat-label">支持格式</div>
+                        </div>
+                    </div>
+                    <div class="detail-scenarios">
+                        <h4 class="scenarios-title">应用场景</h4>
+                        <div class="scenarios-tags">
+                            <span class="scenario-tag">游戏开发</span>
+                            <span class="scenario-tag">电商展示</span>
+                            <span class="scenario-tag">建筑可视化</span>
+                            <span class="scenario-tag">动画制作</span>
+                            <span class="scenario-tag">虚拟现实</span>
+                        </div>
+                    </div>
+                    <div class="detail-testimonial">
+                        <div class="testimonial-content">
+                            <p>"以前建一个角色模型需要一周，现在用AI只需要描述需求，2小时就能得到高质量模型。这让我们的项目周期缩短了70%。"</p>
+                            <div class="testimonial-author">
+                                <span class="author-name">王强</span>
+                                <span class="author-role">某游戏公司技术总监</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI学习进化能力 -->
+    <section class="evolution" id="evolution">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">核心优势</span>
+                <h2 class="section-title">AI 持续学习进化</h2>
+                <p class="section-desc">我们的AI系统具备自主学习能力，越用越懂你</p>
+            </div>
+            <div class="evolution-content">
+                <div class="evolution-flow fade-in">
+                    <div class="flow-node">
+                        <div class="node-icon">📥</div>
+                        <div class="node-label">数据输入</div>
+                    </div>
+                    <div class="flow-arrow">
+                        <div class="arrow-line"></div>
+                        <div class="arrow-dot"></div>
+                    </div>
+                    <div class="flow-node">
+                        <div class="node-icon">🧠</div>
+                        <div class="node-label">模型训练</div>
+                    </div>
+                    <div class="flow-arrow">
+                        <div class="arrow-line"></div>
+                        <div class="arrow-dot"></div>
+                    </div>
+                    <div class="flow-node">
+                        <div class="node-icon">⚡</div>
+                        <div class="node-label">优化迭代</div>
+                    </div>
+                    <div class="flow-arrow">
+                        <div class="arrow-line"></div>
+                        <div class="arrow-dot"></div>
+                    </div>
+                    <div class="flow-node">
+                        <div class="node-icon">✨</div>
+                        <div class="node-label">优质输出</div>
+                    </div>
+                </div>
+                <div class="evolution-feedback fade-in">
+                    <div class="feedback-line"></div>
+                    <span class="feedback-label">反馈优化循环</span>
+                </div>
+                <div class="evolution-features">
+                    <div class="evolution-feature fade-in">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"/>
+                            </svg>
+                        </div>
+                        <h4 class="feature-title">持续学习用户偏好</h4>
+                        <p class="feature-desc">AI分析您的使用习惯，自动调整输出风格，让每一次创作都更贴合您的需求</p>
+                    </div>
+                    <div class="evolution-feature fade-in">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/>
+                            </svg>
+                        </div>
+                        <h4 class="feature-title">自动优化输出质量</h4>
+                        <p class="feature-desc">通过持续的反馈循环，AI不断提升生成质量，达到专业级水准</p>
+                    </div>
+                    <div class="evolution-feature fade-in">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"/>
+                            </svg>
+                        </div>
+                        <h4 class="feature-title">适应行业趋势变化</h4>
+                        <p class="feature-desc">实时追踪设计趋势，确保输出内容始终符合行业最新标准</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 定制服务 -->
+    <section class="custom" id="custom">
+        <div class="container">
+            <div class="custom-wrapper">
+                <div class="custom-content fade-in">
+                    <span class="section-tag">定制服务</span>
+                    <h2 class="section-title">企业级定制方案</h2>
+                    <p class="custom-desc">
+                        为您的企业量身打造专属AI工作流，深度集成现有业务系统，
+                        实现真正的智能化生产
+                    </p>
+                    <ul class="custom-features">
+                        <li>
+                            <span class="check-icon">✓</span>
+                            专属AI模型训练与优化
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            工作流深度定制开发
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            API接口无缝集成
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            7x24小时技术支持
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            数据安全与隐私保障
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">
+                        <span>申请定制方案</span>
+                        <span class="btn-glow"></span>
+                    </a>
+                </div>
+                <div class="custom-visual fade-in">
+                    <div class="visual-card">
+                        <div class="visual-header">
+                            <div class="visual-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span class="visual-title">oasis-config.yaml</span>
+                        </div>
+                        <div class="visual-code">
+                            <pre><code><span class="code-key">model:</span> <span class="code-value">oasis-enterprise-v3</span>
+<span class="code-key">workflow:</span>
+  <span class="code-key">-</span> <span class="code-string">video-editing</span>
+  <span class="code-key">-</span> <span class="code-string">graphic-design</span>
+  <span class="code-key">-</span> <span class="code-string">3d-modeling</span>
+<span class="code-key">learning:</span> <span class="code-value">continuous</span>
+<span class="code-key">output_quality:</span> <span class="code-value">professional</span>
+<span class="code-key">support:</span> <span class="code-value">24/7</span></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="section-header fade-in">
+                    <span class="section-tag">联系我们</span>
+                    <h2 class="section-title">开启AI创作之旅</h2>
+                    <p class="section-desc">立即体验AI自动化工作流，释放无限创意可能</p>
+                </div>
+                <div class="contact-grid fade-in">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
+                            </svg>
+                        </div>
+                        <h4 class="contact-label">电子邮件</h4>
+                        <a href="mailto:contact@oasis-tech.com" class="contact-value">contact@oasis-tech.com</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+                            </svg>
+                        </div>
+                        <h4 class="contact-label">服务热线</h4>
+                        <a href="tel:4008888888" class="contact-value">400-888-8888</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                <path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
+                            </svg>
+                        </div>
+                        <h4 class="contact-label">公司地址</h4>
+                        <span class="contact-value">北京市海淀区科技园A座</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">◆</span>
+                    <span class="logo-text">绿洲科技</span>
+                </div>
+                <p class="footer-copy">© 2026 绿洲网络科技有限公司 · 让AI赋能每一个创意</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
